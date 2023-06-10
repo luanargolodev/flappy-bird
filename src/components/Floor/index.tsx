@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "react-native";
+import { View } from "react-native";
 import Matter from "matter-js";
 
 import BIRD from "../../assets/bird.png";
@@ -19,8 +19,7 @@ const Floor: React.FC<FloorProps> = (props) => {
   const color = props.color;
 
   return (
-    <Image
-      source={BIRD}
+    <View
       style={
         styles({
           widthBody,
