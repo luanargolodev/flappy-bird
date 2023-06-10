@@ -29,20 +29,36 @@ export default () => {
       { x: windowWidth / 2, y: windowHeight - 17 },
       { width: windowWidth, height: BOTTOM + 20 }
     ),
-    ObstacleTopOne: Obstacle(
+    ObstacleTop1: Obstacle(
       world,
-      "ObstacleTopOne",
+      "ObstacleTop1",
       "green",
       pipeSizePosA.pipeTop.pos,
       pipeSizePosA.pipeTop.size,
       true
     ),
-    ObstacleBottomOne: Obstacle(
+    ObstacleBottom1: Obstacle(
       world,
-      "ObstacleBottomOne",
+      "ObstacleBottom1",
       "green",
       pipeSizePosA.pipeBottom.pos,
       pipeSizePosA.pipeBottom.size,
+      true
+    ),
+    ObstacleTop2: Obstacle(
+      world,
+      "ObstacleTop2",
+      "green",
+      pipeSizePosB.pipeTop.pos,
+      pipeSizePosB.pipeTop.size,
+      true
+    ),
+    ObstacleBottom2: Obstacle(
+      world,
+      "ObstacleBottom2",
+      "green",
+      pipeSizePosB.pipeBottom.pos,
+      pipeSizePosB.pipeBottom.size,
       true
     ),
   };
