@@ -4,7 +4,11 @@ import LOGO from "../../../../assets/logo.png";
 import PLAY from "../../../../assets/play.png";
 import { styles } from "./styles";
 
-const Start = ({ handleOnStartGame }) => {
+interface StartProps {
+  handleOnStartGame: () => void;
+}
+
+const Start = ({ handleOnStartGame }: StartProps) => {
   return (
     <View style={styles.container}>
       <Image source={LOGO} style={styles.logo} />
